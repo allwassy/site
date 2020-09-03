@@ -1,0 +1,499 @@
+<!-- Created by Allan Mwangi -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="author" content="Allan Mwangi" >
+  <title>Tyra Mauree😍|| What is Love</title>
+</head>
+<body>
+<!--
+  Allan Mwangi
+-->
+  <div id="app">
+  <v-app>
+    <v-navigation-drawer v-model="drawer" app>
+    <v-list dense>
+    <v-list-item link href="#home">
+    <v-list-item-action>
+    <v-icon>mdi-home</v-icon>
+    </v-list-item-action>
+    <v-list-item-content>
+    <v-list-item-title>Home</v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    <v-list-item link href="#form">
+    <v-list-item-action>
+    <v-icon>mdi-contact-mail</v-icon>
+    </v-list-item-action>
+    <v-list-item-content>
+    <v-list-item-title>Contact</v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    
+    
+    <v-list-group>
+    <template v-slot:activator>
+    <v-list-item-action>
+    <v-icon>mdi-heart</v-icon>
+    </v-list-item-action>
+    <v-list-item-content>
+    <v-list-item-title>
+      More
+    </v-list-item-title>
+    </v-list-item-content>
+    </template>
+    
+    <v-list-item>
+    <v-list-item-content>
+    <v-list-item-title>
+      Princess
+    </v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    <v-list-item>
+    <v-list-item-content>
+    <v-list-item-title>
+      Sweetoo
+    </v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    <v-list-item>
+    <v-list-item-content>
+    <v-list-item-title>
+       princee
+    </v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    <v-list-item>
+    <v-list-item-content>
+    <v-list-item-title>
+      My star
+    </v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    </v-list-group>
+    
+    <v-list-item link>
+    <v-list-item-action>
+    <v-icon>mdi-settings</v-icon>
+    </v-list-item-action>
+    <v-list-item-content>
+    <v-list-item-title>Settings</v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    <v-list-item link>
+    <v-list-item-action>
+    <v-icon>mdi-message</v-icon>
+    </v-list-item-action>
+    <v-list-item-content>
+    <v-list-item-title>Messages</v-list-item-title>
+    </v-list-item-content>
+    </v-list-item>
+    
+    </v-list>
+    </v-navigation-drawer>
+    
+      <v-app-bar app color="red" dark >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" ></v-app-bar-nav-icon>
+      
+      <v-toolbar-title class="font-weight-bold" >MyLove Tyra Mauree😍</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+      <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      </v-app-bar> 
+      <v-content>
+         <v-carousel hide-delimiters height="350" id="home">
+           <v-carousel-item
+            v-for="(item,i) in carousel"
+            :key="i"
+            :src="item.src"
+            >
+           </v-carousel-item>
+         </v-carousel>
+        <v-container>
+          <v-row class="font-weight-light text-center" style="font-size:18px; color:#444;" >
+           <v-col cols="12">
+            <h1 class="display-1 my-5 font-weight-light" >  what is Love -  </h1>
+           <v-divider></v-divider>
+           </v-col>
+            <v-col cols="12" md="4">
+             <v-hover v-slot:default="{ hover }">
+              <v-card class="mx-auto pb-4 mb-5" max-width="400" :elevation="hover ? 12 : 2">
+               <v-btn icon class="pa-12 mb-4" color="red" >
+                  <v-icon class="display-4" >mdi-heart</v-icon>
+               </v-btn>
+               <p class="px-7">
+               This is going to sound crazy, but…from the moment I first set eyes on you I haven’t been able to stop thinking about you.
+               </p>
+             </v-card>
+             </v-hover>
+            </v-col>
+ 
+            <v-col cols="12" md="4">
+             <v-hover v-slot:default="{ hover }">
+              <v-card class="mx-auto pb-4 mb-5" max-width="400" :elevation="hover ? 12 : 2">
+              <v-btn icon class="pa-12 mb-4" color="red" >
+                <v-icon class="display-4" >mdi-thumb-up</v-icon>
+              </v-btn>
+              <p class="px-7">
+              Love is of all passions the strongest, for it attacks simultaneously the head, the heart and the senses.
+              </p>
+             </v-card>
+            </v-hover>
+           </v-col>
+            
+            <v-col cols="12" md="4">
+             <v-hover v-slot:default="{ hover }">
+              <v-card class="mx-auto pb-4 mb-5" max-width="400" :elevation="hover ? 12 : 2">
+               <v-btn icon class="pa-12 mb-4" color="red" >
+                <v-icon class="display-4" >mdi-account</v-icon>
+              </v-btn>
+              <p class="px-7" >
+              You know you’re in love when you see the world in her eyes and her eyes everywhere in the world.
+              </p>
+              </v-card>
+             </v-hover>
+            </v-col>
+          </v-row>
+          
+          <v-parallax
+          dark
+          src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+          height="400" 
+          class="my-8 mx-n4" 
+          >
+          <v-row  align="center" justify="center" >
+           <v-col class="text-center" cols="12">
+            <h1 class="display-1 font-weight-thin mb-4">I Love You Star</h1>
+            <h3 class="subheading font-weight-light px-2">Everybody knows how to love, but few people know how to stay in love with one person forever.</h3>
+           </v-col>
+          </v-row>
+          </v-parallax>
+          
+          <v-row>
+           <v-col cols="12">
+            <h1 class="display-1 my-5 font-weight-light text-center" >Blog Post - </h1>
+            <v-divider></v-divider>
+           </v-col>
+            <v-col cols="12" md="4">
+              <v-hover  v-slot:default="{ hover }">
+                <v-card class="mx-auto" max-width="400" :elevation="hover ? 12 : 2">
+                <v-img
+                 class="white--text align-end"
+                 height="200px"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSXj17Li232Oy3s49TzY1A1V3ku3lYKW3nUxZMS_899Lwnx4JaO"
+                 >
+                <v-card-title>MyLove.com</v-card-title>
+                </v-img> 
+                <v-card-subtitle>
+                 5th March
+                </v-card-subtitle>
+                <v-card-text class="text--primary">
+                <p>
+                 Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.
+                </p>
+                </v-card-text>
+                <v-divider></v-divider>
+                <v-card-actions>
+                <v-btn color="red" text >Share</v-btn>
+                </v-card-actions>
+                </v-card>
+              </v-hover>
+            </v-col>
+            <v-col cols="12" md="4">
+            <v-hover  v-slot:default="{ hover }">
+            <v-card class="mx-auto" max-width="400" :elevation="hover ? 12 : 2">
+            <v-img
+            class="white--text align-end"
+            height="200px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlkuDWOSlpjAuLv1g66HfDD8q-zJoxU2Hp_F1LoyQhVedi9mkH"
+            >
+            <v-card-title>MyLove.com</v-card-title>
+            </v-img> 
+            <v-card-subtitle>
+            15th March
+            </v-card-subtitle>
+            <v-card-text class="text--primary">
+            <p>
+            Everybody knows how to love, but few people know how to stay in love with one person forever.
+            </p>
+            </v-card-text>
+            <v-divider></v-divider>
+            <v-card-actions>
+            <v-btn color="red" text >Share</v-btn>
+            </v-card-actions>
+            </v-card>
+            </v-hover>
+            </v-col>
+            
+            <v-col cols="12" md="4">
+            <v-hover  v-slot:default="{ hover }">
+            <v-card class="mx-auto" max-width="400" :elevation="hover ? 12 : 2">
+            <v-img
+            class="white--text align-end"
+            height="200px"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoBaPZKJ5cxN5gAHx4KrEKmVSkOHKBBMIavrbo7vLuiPiaJOLd"
+            >
+            <v-card-title>MyLove.com</v-card-title>
+            </v-img> 
+            <v-card-subtitle>
+            21st March
+            </v-card-subtitle>
+            <v-card-text class="text--primary">
+            <p>
+              If you ever ask me how many times you’ve crossed my mind, I would say once. Because you came, and never left. 
+            </p>
+            </v-card-text>
+             <v-divider></v-divider>
+              <v-card-actions>
+               <v-btn color="red" text >Share</v-btn>
+              </v-card-actions>
+             </v-card>
+            </v-hover>
+            </v-col>
+          </v-row>
+          <!-- timeline section -->
+          <v-row> 
+          <v-col cols="12">
+            <h1 class="display-1 my-5 font-weight-light text-center" >Timelines - </h1>
+            <v-divider></v-divider>
+          </v-col>
+           <v-col cols="12">
+             <v-timeline dense>
+              <v-timeline-item color="red"   
+              right
+              >
+                 <v-card class="elevation-2">
+                    <v-card-title class="headline red--text">Love you</v-card-title>
+                      <v-card-text>
+                          Hate me if you want But hating you I cannot The more I seem to try to hate you I just realize the more I love you.
+                     </v-card-text>
+                 </v-card>
+               </v-timeline-item>
+               <v-timeline-item color="indigo"   
+               small
+               left
+               >
+               <v-card class="elevation-2">
+               <v-card-title class="headline indigo--text">Love is pain</v-card-title>
+               <v-card-text>
+                 Loving you is such a pain When all I have to do is wait What will I have to gain Is this the love that I await?
+               </v-card-text>
+               </v-card>
+               </v-timeline-item>
+               
+               <v-timeline-item color="purple"   
+               right
+               >
+               <v-card class="elevation-2">
+               <v-card-title class="headline purple--text">Love is feeling</v-card-title>
+               <v-card-text>
+                 Love is the feeling that’s free, It is fighting and winning, It is for keeps until we’re dying Love is you and me.
+               </v-card-text>
+               </v-card>
+               </v-timeline-item>
+               
+             </v-timeline>    
+           </v-col>
+          </v-row>
+          <!-- love gallery -->
+          <v-row>
+           <v-col cols="12">
+             <h1 class="display-1 my-5 font-weight-light text-center" >Love Gallery - </h1>
+             <v-divider></v-divider>
+           </v-col>
+            <v-col
+            v-for="(item, i) in gallery"
+            :key="i"
+            class="d-flex child-flex"
+            cols="6" md="4">
+           <v-card flat tile class="d-flex">
+           
+            <v-img
+            :src="`${item.img}`"
+            lazy-src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUsus8Ozq-5ZQwYsyBC-8DS11l8ufrZSx1QBY7fKclf_8N6Crd"
+            aspect-ratio="1"
+            class="grey lighten-2"
+           >
+              <template v-slot:placeholder>
+               <v-row
+                 class="fill-height ma-0"
+                align="center"
+               justify="center" >
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+             </v-row>
+            </template>
+           </v-img>
+          </v-card>
+         </v-col>
+        </v-row> 
+          <!-- Love Quotes section -->
+          <v-row>
+           <v-col cols="12">
+             <h1 class="display-1 my-5 font-weight-light text-center" >Love Quotes - </h1>
+             <v-divider></v-divider>
+           </v-col>
+           <v-col cols="12">
+            <v-list three-line>
+             <v-subheader class="text-uppercase" >Love status</v-subheader>
+             <v-list-item-group v-model="list" color="primary">
+             <v-list-item
+               v-for="(item, i) in lists"
+               :key="i"
+               style="border-bottom:1px solid #f5f5f5;" 
+                >
+              <v-list-item-icon>
+              <v-icon color="red" large>mdi-heart</v-icon>
+               </v-list-item-icon>
+              <v-list-item-content>
+             <v-list-item-subtitle v-text="item.text"></v-list-item-subtitle>
+            </v-list-item-content>
+    
+            </v-list-item>
+          </v-list-item-group>
+         </v-list>
+             
+           </v-col>
+          </v-row>
+          
+         <!-- form section start --> 
+          
+         <v-form ref="form" v-model="valid" lazy-validation id="form">
+            <v-row class="pa-5" >
+               <v-col cols="12">
+                 <h1 class="display-1 my-5 font-weight-light text-center" >Contact me - </h1>
+                 <v-divider></v-divider>
+               </v-col>
+               <v-col cols="12" md="6">
+                  <v-text-field
+                    v-model="name"
+                    :counter="10"
+                    :rules="nameRules"
+                    label="Name"
+                    required>
+                  </v-text-field>
+                </v-col>
+                <v-col cols="12" md="6">
+                  <v-text-field
+                     v-model="email"
+                     :rules="emailRules"
+                     label="E-mail"
+                     required>
+                  </v-text-field>
+                </v-col>
+                <v-col cols="12">
+                  <v-textarea 
+                   label="Message" 
+                   v-model="msg"
+                   :counter="120"
+                   :rules="msgRules"
+                   required
+                  >
+                  </v-textarea>
+                 </v-col>
+                 <v-col cols="12" md="6">
+                   <v-btn :disabled="!valid" color="primary"  class="mr-4" @click="validate">
+                     Submit
+                   </v-btn>
+                   <v-btn color="error" class="mr-4" @click="reset" >
+                     Reset Form
+                   </v-btn>
+                </v-col>
+             </v-row>
+          </v-form>
+          
+        </v-container>
+      </v-content>
+   <!-- footer section start   -->
+   <v-footer dark padless >
+     <v-card flat tile class="indigo lighten-1 white--text text-center">
+      <v-card-text>
+        <v-btn class="mx-4 white--text" text href="https://www.sololearn.com/Profile/9151475/?ref=app">Sololearn</v-btn>
+        <v-btn class="mx-4 white--text" text> facebook </v-btn>
+        <v-btn class="mx-4 white--text" text>Instagram </v-btn>
+        
+      </v-card-text> 
+      <v-card-text class="white--text pt-0">
+        Love can make you do anything and sacrifice for what will be better in the end. Love is intense and passionate. Everything seems brighter, happier and more wonderful when you’re in love. If you find it, don’t let it go.
+      </v-card-text>
+        <v-divider></v-divider>
+      <v-card-text class="white--text">
+        COPYRIGHT &copy; {{ new Date().getFullYear() }}. All Right Reserved By - <strong>MyLove Tyra Mauree from your loving husband Allan </strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
+ </v-app>
+</div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data:{
+        msg:"hello",
+        drawer:null,
+        carousel: [
+        { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzPryiNZvNdH4-5ZUqJ2YLqsaknYJb5cjjm5O3GRhMIeQGxUEQ'},
+        { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQgV55Px5x_Ldv_sFP9RpwNcmljTC0gLbzfa_KLosSDNmCREUrd'},
+        { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6Aj-lQ3_iRDwkauEtPxc49QY3BQ4DBoj7qOIVzZvmDVjaJ_Sv'},
+        { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRh2nF5kQvou1eDJP9ELBbGb1AZaXM9msDyj2a5NAq_ILy-tvFY' }
+        ],
+        list: 0,
+        lists: [
+        { text: 'Every love story is beautiful but ours is my favourite.' },
+        { text: 'Love is composed of a single soul inhabiting two bodies.' },
+        { text: 'You either live in love or die, there is no way in between' },
+        { text: 'Love is not about posssession, Love is about appreciation'},
+        { text: 'Love is that which, cannot see the poorness…'},
+        { text: ' Hi, is a short, simple word but it’s how love starts.'},
+        ],
+        valid: true,
+        name: '',
+        nameRules: [
+        v => !!v || 'Name is required',
+        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+        ],
+        email: '',
+        emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+        ],
+        msg:'',
+        msgRules:[
+         v => !!v || 'Message is required',
+         v => (v && v.length <= 120) || 'Message must be less than 120 characters',    
+        ],
+        gallery:[
+         {img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRUBizZr2BW7sApDtG9XJji0VijdslP96tQkqaoU04hR56dlnr'},
+         {img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT5BtIY-HWOmG4sNC53-f-r2TOYXlhEEJddgg8-JxFjpZt-dTa9'},
+         {img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRzPryiNZvNdH4-5ZUqJ2YLqsaknYJb5cjjm5O3GRhMIeQGxUEQ'},
+         {img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTvVeJ2YY8iH2n2VBNwlRpVX4piIfinH8tfYiJ3RPRhK4PPVHjg'},
+         {img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSNef6hj6dYLg5P4l0OVJFNiVOQ8SMaNnZeOhlblBtN6Adotz0j'},
+         {img:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-bdlyoIvalpXqcuClkwrWKr_nUPwLriYh6pkgeOa58M0RUH-5'}
+        ]
+      },
+      methods:{
+       validate () {
+       if (this.$refs.form.validate()) {
+        this.snackbar = true
+        alert("Thank you for your Message");
+        this.reset();
+       }
+       },
+       reset () {
+        this.$refs.form.reset()
+       },
+      }
+    })
+  </script>
+</body>
+</html>
